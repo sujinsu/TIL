@@ -22,14 +22,13 @@ import java.util.*;
 
 class Main {
     public static List<Integer> josephusSequence(int N, int K) {
-        // TODO:
         List<Integer> result = new ArrayList<>();
         List<Integer> sequence = new ArrayList<>();
         for (int i=1;i<N+1;i++){
             sequence.add(i);
         }
 
-        // K 번째 수 제거
+        // 다음 K 번째 제거
         int idx = 0;
         while(!sequence.isEmpty()){
             idx = (idx + K-1) % sequence.size();
