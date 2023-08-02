@@ -2,9 +2,9 @@
 
 ```
 입력예제1복사하기
-Hyundai-Motor-Group
+Spring-Cloud-Gateway
 출력예제1
-HMG
+SCG
 ```
 
 
