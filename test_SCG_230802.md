@@ -1,7 +1,7 @@
 
 
 ```
-입력예제1복사하기
+입력예제1
 Spring-Cloud-Gateway
 출력예제1
 SCG
