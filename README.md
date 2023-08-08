@@ -12,6 +12,9 @@
 
 
 2. 스택 (FILO)
+   
+   - Array, List
+   
    - 하나의 입출력 장소, 제한적인 데이터 접근 -> 데이터 안전성, 무결성 보장
    - ex) 웹브라우저 방문 기록, 괄호 등
    - 삽입(push)
@@ -19,6 +22,9 @@
    - 읽기(peek or top)
    - isEmpty
 3. 큐 (FIFO)
+   
+   - Array, List (LinkedList)
+   
    - 삽입(Enqueue) : O(1)
    - 삭제(Dequeue) : O(1)
    - 읽기(Peek) : O(1)
