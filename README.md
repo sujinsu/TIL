@@ -12,9 +12,9 @@
 
 
 2. 스택 (FILO)
-   
+
    - Array, List
-   
+
    - 하나의 입출력 장소, 제한적인 데이터 접근 -> 데이터 안전성, 무결성 보장
    - ex) 웹브라우저 방문 기록, 괄호 등
    - 삽입(push)
@@ -22,14 +22,18 @@
    - 읽기(peek or top)
    - isEmpty
 3. 큐 (FIFO)
-   
+
    - Array, List (LinkedList)
-   
+
    - 삽입(Enqueue) : O(1)
    - 삭제(Dequeue) : O(1)
    - 읽기(Peek) : O(1)
    - isEmpty
 4. 재귀
+   - 자기자신을 호출
+     - 기본 조건(base case) : 재귀 호출 중단 조건
+     - 재귀 호출(recursive call) : 더 작은 하위 문제로 분해하여 해결
+     - ex) 팩토리얼 구현, 피보나치 수열, 분할 정복
 
 
 
