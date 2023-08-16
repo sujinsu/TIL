@@ -32,7 +32,14 @@ class Main {
             idx = (idx + K-1) % num;
             result.add(data.remove(idx));
         }
-        System.out.println(result);
+        System.out.print("<");
+        for (int i = 0; i < result.size(); i++) {
+            System.out.print(result.get(i));
+            if (i < result.size() - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println(">");
     }
 }
 ```
