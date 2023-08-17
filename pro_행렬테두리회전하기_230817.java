@@ -19,6 +19,7 @@ public class pro_행렬테두리회전하기_230817 {
         List<Integer> answer = new ArrayList<>();
         data = new int[rows][columns];
 
+        // 행렬 초기값 세팅
         int num = 0;
         for(int i=0;i<rows;i++){
             for(int j=0;j<columns;j++){
@@ -42,8 +43,8 @@ public class pro_행렬테두리회전하기_230817 {
         int end_col = condition[3]-1;
 
         // row, col : 현재 위치
-        int row = condition[0]-1;
-        int col = condition[1]-1;
+        int row = start_row;
+        int col = start_col;
 
         // next : 다음 값
         int next;
@@ -51,11 +52,9 @@ public class pro_행렬테두리회전하기_230817 {
         // 0,1,2,3 (우 하 좌 상)
         int direction = 0;
 
-        int remember = data[start_row][start_col];
-        int temp = remember;
-        int min = remember;
-        boolean check = false;
-        while(!check){
+        int temp = data[start_row][start_col];
+        int min = temp;
+        while(true){
             switch (direction) {
                 case 0:
                     if(col == end_col){
@@ -83,13 +82,12 @@ public class pro_행렬테두리회전하기_230817 {
                     break;
                 case 3:
                     if(row == start_row){
-                        check = true;
+                        return min;
                     }else{
                         row -= 1;
                     }
                     break;
             }
-            if(check) break;
 
             if(temp < min) min = temp;
 
@@ -97,7 +95,5 @@ public class pro_행렬테두리회전하기_230817 {
             data[row][col] = temp;
             temp = next;
         }
-
-        return min;
     }
 }
