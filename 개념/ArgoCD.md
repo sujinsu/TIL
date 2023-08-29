@@ -6,7 +6,8 @@
 
 : GitOps 접근 방식의 장점 극대화, 현대적인 쿠버네티스 환경에서의 애플리케이션 배포 간소화, 안정화
 
-![Untitled](ArgoCD%20c0e9d4654b5e4ae1b7a832ee69794a2f/Untitled.png)
+
+![image](https://github.com/sujinsu/TIL/assets/87465326/24003149-c4ca-412e-bb30-81d95947c37c)
 
 
 
