@@ -1,11 +1,11 @@
 ## 💡 공부할 것들
 
-| 주제      | URL                                                          | Y/N                |
-| --------- | ------------------------------------------------------------ | ------------------ |
-| 배포 과정 |                                      |                :white_large_square:        |
-| Harbor    | [harbor.md](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Harbor.md) | :white_check_mark: |
-| ArgoCD    |                                     |   :white_large_square:                      |
-| Jenkins   |                                                              |                    |
+| 주제      | URL                                                          | Y/N                  |
+| --------- | ------------------------------------------------------------ | -------------------- |
+| 배포 과정 |                                                              | :white_large_square: |
+| Harbor    | [harbor.md](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Harbor.md) | :white_check_mark:   |
+| ArgoCD    | [ArgoCD.md](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/ArgoCD.md) | :white_large_square: |
+| Jenkins   |                                                              |                      |
 
 
 
