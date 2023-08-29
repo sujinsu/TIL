@@ -2,9 +2,9 @@
 
 | 주제      | URL                                                          | Y/N                |
 | --------- | ------------------------------------------------------------ | ------------------ |
-| 배포 과정 | :white_large_square:                                         |                    |
+| 배포 과정 |                                      |                :white_large_square:        |
 | Harbor    | [harbor.md](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Harbor.md) | :white_check_mark: |
-| ArgoCD    | :white_large_square:                                         |                    |
+| ArgoCD    |                                     |   :white_large_square:                      |
 | Jenkins   |                                                              |                    |
 
 
