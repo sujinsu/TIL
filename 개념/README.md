@@ -1,13 +1,13 @@
 ## 💡 공부할 것들
 
-| 주제                              | 이행 여부            |
-| --------------------------------- | -------------------- |
-| 배포 과정                         | :white_large_square: |
-| harbor, ArgoCD, Jenkins 등의 역할 | :white_large_square: |
-| DB                                | :white_large_square: |
-|                                   |                      |
-|                                   |                      |
-|                                   |                      |
+| 주제      | 이행 여부            |
+| --------- | -------------------- |
+| 배포 과정 | :white_large_square: |
+| Harbor    | :white_check_mark:   |
+| ArgoCD    | :white_large_square: |
+| Jenkins   |                      |
+| DB        |                      |
+|           |                      |
 
 
 
