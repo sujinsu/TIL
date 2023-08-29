@@ -111,7 +111,8 @@ ALTER TABLE 테이블이름 ADD (UNIQUE)INDEX 인덱스이름(컬럼명1, 컬럼
 
 - 클러스터형 인덱스
   
-    ![Untitled](%5BMysql%5D%20INDEX%20356157b99da44241bc4f53824244ea0e/Untitled.png)
+    ![image](https://github.com/sujinsu/TIL/assets/87465326/e02337b7-f5cf-4f8e-a066-4d0395bee41d)
+
     
 - 테이블당 1개
 - 기본 키 지정된 컬럼 → 자동으로 클러스터링 인덱스
@@ -120,7 +121,8 @@ ALTER TABLE 테이블이름 ADD (UNIQUE)INDEX 인덱스이름(컬럼명1, 컬럼
 
 - 보조 인덱스
   
-    ![Untitled](%5BMysql%5D%20INDEX%20356157b99da44241bc4f53824244ea0e/Untitled%201.png)
+    ![image](https://github.com/sujinsu/TIL/assets/87465326/2eaa4681-08b0-4f93-b58f-bdb322fae6e9)
+
     
 - 한 테이블에 여러 개 가능
 - UNIQUE 키워드로 고유 컬럼 지정 → 자동으로 보조 인덱스 생성
