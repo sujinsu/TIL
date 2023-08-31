@@ -5,7 +5,7 @@
 | Harbor | [harbor.md](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Harbor.md) | :white_check_mark: |
 | ArgoCD       | [ArgoCD.md](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/ArgoCD.md) | :white_check_mark:   |
 | [MYSQL]INDEX | [[MYSQL]INDEX](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/[MYSQL]INDEX.md) | :white_check_mark:   |
-| JDBC         |                                                              | :white_large_square: |
+| JDBC         | [JDBC](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/JDBC.md) | :white_check_mark: |
 | MyBatis      |                                                              | :white_large_square: |
 | Jenkins      | | :white_large_square: |
 | 배포 과정 | | :white_large_square: |
