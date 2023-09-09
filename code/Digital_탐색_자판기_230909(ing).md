@@ -1,4 +1,4 @@
-
+탐색 시간초과 -> 고민 더해보기
 
 ```java
 import java.util.*;
