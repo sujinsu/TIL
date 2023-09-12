@@ -1,5 +1,9 @@
 import java.util.*;
-public class Digital_정렬_사서_230912 {
+
+/**
+ * 아직 더 풀어야 함
+ */
+public class Digital_정렬_사서_230912_ing {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
