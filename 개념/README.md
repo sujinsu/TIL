@@ -7,7 +7,7 @@
 | [MYSQL]INDEX | [[MYSQL]INDEX](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/[MYSQL]INDEX.md) | :white_check_mark:   |
 | JDBC         | [JDBC](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/JDBC.md) | :white_check_mark: |
 | MyBatis      | [MyBatis](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/MyBatis.md)                                                             | :white_check_mark: |
-| Jenkins      | | :white_large_square: |
+| SAGA패턴 | [SAGA패턴](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/MyBatis.md) | :white_check_mark:   |
 | 배포 과정 | | :white_large_square: |
 
 
