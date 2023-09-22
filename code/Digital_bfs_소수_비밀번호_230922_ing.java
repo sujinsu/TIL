@@ -1,6 +1,7 @@
 package code;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 /**
  * 지시사항
@@ -12,7 +13,7 @@ import java.util.*;
  */
 public class Digital_bfs_소수_비밀번호_230922_ing {
 
-    class data{
+    static class data{
         int count;
         int pw;
 
@@ -27,12 +28,23 @@ public class Digital_bfs_소수_비밀번호_230922_ing {
     public static void main(String[] args) {
         isPrime = eratosthenes(9999);
 
+        Scanner sc = new Scanner(System.in);
+        int oldPw = sc.nextInt();
+        int newPw = sc.nextInt();
+        int answer = bfs(oldPw, newPw);
 
+        if(answer == -1){
+            System.out.println("Impossible");
+        }else{
+            System.out.println(answer);
+        }
     }
 
     public static boolean[] eratosthenes(int n){
-        boolean[] isPrime = new boolean[n];
-
+        boolean[] isPrime = new boolean[n+1];
+        for (int i = 2; i <= n; i++) {
+            isPrime[i] = true;
+        }
         for(int i=2;i * i <= n; i++){
             if (isPrime[i]) {
                 for (int j = i * i; j <= n; j += i) {
@@ -43,8 +55,8 @@ public class Digital_bfs_소수_비밀번호_230922_ing {
         return isPrime;
     }
 
-    public int bfs(int oldPw, int newPw){
-        boolean[] visited = new boolean[9999];
+    public static int bfs(int oldPw, int newPw){
+        boolean[] visited = new boolean[10000];
         Queue<data> queue = new LinkedList<>();
 
         if(oldPw == newPw) return 0;
@@ -57,20 +69,23 @@ public class Digital_bfs_소수_비밀번호_230922_ing {
             // 네자리 수를 쪼개서 각 자리별로 0 ~ 9 본인 제외 ㄱㄱ
 
             int start = 1;
+            int pwList[] = Stream.of(String.valueOf(cur.pw).split("")).mapToInt(Integer::parseInt).toArray();
             for(int i=0;i<4;i++){
-                // 아직 한 적없는 비밀번호 & 소수
-                int temp = (int) (oldPw - oldPw / Math.pow(10, 4-(i+1)));
 
+
+                int temp = cur.pw - (int) (pwList[i] * Math.pow(10, 4-(i+1)));
+                // System.out.println("BEFORE :::"+temp);
                 for(int j=start;j<=9; j++){
-                    temp += j * Math.pow(10, 4-(i+1));
-
-                    if(temp == newPw){
+                    int newTemp = temp + (int) (j * Math.pow(10, 4-(i+1)));
+                    // System.out.println("After :::"+newTemp);
+                    if(newTemp == newPw){
                         return cur.count +1 ;
                     }
-
-                    if(!visited[temp] && isPrime[temp]){
-                        visited[temp] = true;
-                        queue.add(new data(cur.count+1, temp));
+                    // 아직 한 적없는 비밀번호 & 소수
+                    if(!visited[newTemp] && isPrime[newTemp]){
+                        visited[newTemp] = true;
+                        queue.add(new data(cur.count+1, newTemp));
+                        // System.out.println("Go :::"+newTemp);
                     }
                 }
                 start = 0;
