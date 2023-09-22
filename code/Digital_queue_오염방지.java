@@ -1,3 +1,5 @@
+package code;
+
 import java.util.*;
 public class Digital_queue_오염방지 {
 
