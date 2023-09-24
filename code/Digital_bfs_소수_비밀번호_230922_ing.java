@@ -11,6 +11,7 @@ import java.util.stream.Stream;
  * 두 소수 사이의 변환에 필요한 최소 횟수를 출력합니다.
  * 불가능한 경우 Impossible을 출력합니다.
  */
+// TODO 80점
 public class Digital_bfs_소수_비밀번호_230922_ing {
 
     static class data{
