@@ -70,9 +70,8 @@ ex) traceroute [목적지 IP주소]
 
 ex) ***netstat [-a] [-l] [-r] [-n] [-c] [-p프로토콜] [-t] [-u]***
 
+![image](https://github.com/sujinsu/TIL/assets/87465326/b86cd912-32e0-4502-9b4b-b40c6e6fcdc1)
 
-
-![img](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fef963f62-2de7-4d4a-924e-8bfff6b6a1bf%2FUntitled.png?table=block&id=725581e0-4e36-44c7-9373-883042c28fa1&spaceId=4a50ccd5-0771-4bf1-ba97-dabe26064358&width=2000&userId=7f7a99a6-ff17-400b-9bfb-4f9bb249d476&cache=v2)
 
 l **프로토콜 :** 사용한 프로토콜
 
