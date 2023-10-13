@@ -6,6 +6,7 @@
 
 [Monitoring Linux host metrics with the Node Exporter | Prometheus](https://prometheus.io/docs/guides/node-exporter/)
 
+![image](https://github.com/sujinsu/TIL/assets/87465326/8fd9eb72-f928-40f4-a58a-f83a334bef8b)
 
 
 
@@ -13,6 +14,7 @@
 
 
 ## Prometheus
+![image](https://github.com/sujinsu/TIL/assets/87465326/3f6e2d83-4dbf-43e0-a26b-56023107f223)
 
 - 서버에 클라이언트가 떠 있으면 서버가 주기적으로 클라이언트에 접속해서 데이터를 가져오는 방식
 
