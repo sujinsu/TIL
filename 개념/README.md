@@ -11,6 +11,7 @@
 | 네트워크 | [Network명령어](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Network명령어.md) | :white_check_mark: |
 | CoreDNS & ConfigMap | [CoreDNS&ConfigMap](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/CoreDNS&ConfigMap.md) | :white_check_mark: |
 | Repository  & Build | [Repository&Build](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Repository&Build.md) | :white_check_mark: |
+| Prometheus | [Prometheus](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Prometheus.md) | :white_check_mark: |
 | | | :white_large_square: |
 
 
