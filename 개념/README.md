@@ -12,7 +12,7 @@
 | CoreDNS & ConfigMap | [CoreDNS&ConfigMap](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/CoreDNS&ConfigMap.md) | :white_check_mark: |
 | Repository  & Build | [Repository&Build](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Repository&Build.md) | :white_check_mark: |
 | Prometheus | [Prometheus](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Prometheus.md) | :white_check_mark: |
-| Linux_파일허가권 | [Prometheus](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Linux_파일허가권.md) | :white_check_mark: |
+| Linux_파일허가권 | [Linux_파일허가권](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Linux_파일허가권.md) | :white_check_mark: |
 | | | :white_large_square: |
 
 
