@@ -3,23 +3,23 @@
 # 파일허가권
 
 
+![image](https://github.com/sujinsu/TIL/assets/87465326/2dfa0803-a303-4e98-8222-9248a4ce1d4e)
 
-[리눅스 ls -l 명령어 - 파일 정보 확인과 의미](https://www.leafcats.com/137)
-
+![image](https://github.com/sujinsu/TIL/assets/87465326/5ada55af-980b-462d-96f5-8db356f40211)
 
 
 ### **총 8개의 항목**
 
 1. **유형**
 
-- - : 일반 파일
-- d : 디렉토리
-- c : 문자 디바이스
-- l : 링크
+- `-` : 일반 파일
+- `d` : 디렉토리
+- `c` : 문자 디바이스
+- `l` : 링크
 
 2. **파일 허가권**
 
-[리눅스 chmod 명령어 - 리눅스 허가권(Permission)](https://www.leafcats.com/138)
+
 
 > 세 개씩 잘라서 읽어야 한다.
 
@@ -54,3 +54,7 @@
 6. **파일 크기**
 7. **최종 수정 일시**
 8. **해당 파일 이름**
+
+자료)
+[리눅스 ls -l 명령어 - 파일 정보 확인과 의미](https://www.leafcats.com/137)
+[리눅스 chmod 명령어 - 리눅스 허가권(Permission)](https://www.leafcats.com/138)
