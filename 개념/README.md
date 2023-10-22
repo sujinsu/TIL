@@ -15,6 +15,7 @@
 | Linux_파일허가권 | [Linux_파일허가권](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Linux_파일허가권.md) | :white_check_mark: |
 | Java 람다 & 이중 콜론 연산자 | [Java 람다 & 이중 콜론 연산자](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/Java람다&이중콜론연산자.md) | :white_check_mark: |
 | 정규표현식 | [정규표현식](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/정규표현식.md) | :white_check_mark: |
+| AOP | [AOP](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/AOP.md) | :white_check_mark: |
 | | | :white_large_square: |
 
 
