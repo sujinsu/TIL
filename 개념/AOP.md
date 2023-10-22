@@ -64,9 +64,9 @@ execution(public Integer com.edu.aop.*.*(*))
 
 - com.edu.aop 패키지에 속해있고, 파라미터가 1개인 모든 메서드
 
-execution(* [com.edu](http://com.edu)..*.get*(..))
+execution(* com.edu)..*.get*(..))
 
-- [com.edu](http://com.edu/) 패키지 및 하위 패키지에 속해있고, 이름이 get 으로 시작하는 파라미터가 0개 이상인 모든 메서드
+- com.edu 패키지 및 하위 패키지에 속해있고, 이름이 get 으로 시작하는 파라미터가 0개 이상인 모든 메서드
 
 execution(* com.edu.aop..*Service.*(..))
 
@@ -272,3 +272,10 @@ public class SimpleEventService implements EventService {
 
 }
 ```
+
+
+자료
+
+https://yadon079.github.io/2021/spring/spring-aop-core
+https://snoopy81.tistory.com/290
+https://icarus8050.tistory.com/7
