@@ -201,6 +201,7 @@ public class PerfAspect {
 
 - @AfterThrowing (**예외 발생 이후**) 
 	타겟 메소드가 수행 중 예외를 던지게 되면 어드바이스 기능을 수행
+	- ex) @AfterReturning(value = "@ ~~ ", returning = "returnValue") : 메서드 내에서 returnValue 사용 가능
 
 - @Around (**메소드 실행 전후**) 
 	어드바이스가 타겟 메소드를 감싸서 타겟 메소드 호출전과 후에 어드바이스 기능을 수행
