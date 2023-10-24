@@ -21,6 +21,8 @@
    - 삭제(pop)
    - 읽기(peek or top)
    - isEmpty
+
+
 **3. 큐 (FIFO)**
 
    - Array, List (LinkedList)
@@ -29,6 +31,8 @@
    - 삭제(Dequeue) : O(1)
    - 읽기(Peek) : O(1)
    - isEmpty
+
+
 **4. 재귀**
    - 자기자신을 호출
      - 기본 조건(base case) : 재귀 호출 중단 조건
