@@ -186,3 +186,9 @@
 
 - path : Apache Jmeter 설치 경로
 - 작성한 테스트 계획을 저장 → .jmx 확장자로 저장 → 위의 커맨드로 실행 → 성능 테스트 자동화
+
+
+참고 자료)
+- https://kamang-it.tistory.com/399
+- https://jaehoney.tistory.com/224
+- https://blog.naver.com/PostView.naver?blogId=wisestone2007&logNo=222160380337&parentCategoryNo=&categoryNo=44&viewDate=&isShowPopularPosts=true&from=search
