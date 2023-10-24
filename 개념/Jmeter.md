@@ -15,61 +15,61 @@
 
 ### 성능 테스트 유형
 
-- Load Test : 동시 사용자 or 프로세스 수
+- **Load Test** : 동시 사용자 or 프로세스 수
   - 트랜잭션의 요청으로 인해 현실적인 부하 수준을 처리하는지에 대한 시스템 성능 측정
-- Stress Test : 임계값 이상의 요청 or 비정상적인 요청
+- **Stress Test** : 임계값 이상의 요청 or 비정상적인 요청
   - 시스템의 최고 성능 한계를 측정하기 위한 테스트
-- Spike Test : 갑자기 사용자가 몰렸을 때 or 업무 부하가 줄어들 때 정상 처리 여부
-- Scalability Test / Soak Test
+- **Spike Test** : 갑자기 사용자가 몰렸을 때 or 업무 부하가 줄어들 때 정상 처리 여부
+- **Scalability Test** / **Soak Test**
   - 긴 시간 동안 테스트 진행 → 시스템의 메모리 증가, 성능 정보 변화 등을 확인
 
 ### 성능 테스트 용어
 
-- Active User
+- **Active User**
 
   - 서버에 연결된 상태로 요청 처리 중인 사용자
 
-- Inactive User
+- **Inactive User**
 
   - 웹브라우저에 결과 화면이 출력된 상태에서 화면의 내용을 읽거나 정보 입력 중인 사용자
 
-- Concurrent User
+- **Concurrent User**
 
    : Active User + Inactive User
 
   - 특정 시점에 시스템에 접속하여 사용하고 있는 사용자
 
-- Virtual User
+- **Virtual User**
 
    : 가상 사용자 수
 
   - Jmeter에서는 Thread 수로 표현하기도 함
 
-- Response Time/Load Time
+- **Response Time** / **Load Time**
 
   - 응답시간 or 처리시간, 요청을 보낸 후 응답이 완료되어 사용자 화면에 출력될 때까지의 시간
 
-- Latency
+- **Latency**
 
   - 요청 후 데이터를 받기 시작할 때까지 시간
 
-- Think Time
+- **Think Time**
 
   - 하나의 요청에 응답을 수신하고 다음 요청을 보낼 때까지 시간
 
-- Request Interval Time
+- **Request Interval Time**
 
   - 요청을 보낸 후 다음 요청을 보낼 때까지 시간
 
-- Ramp-Up Period
+- **Ramp-Up Period**
 
   - Thread 생성에 걸리는 시간
 
-- Transaction
+- **Transaction**
 
   - 업무 처리의 단위, 화면 조작 및 응답을 트랜잭션으로 정의
 
-- Throughput
+- **Throughput**
 
   - 단위 시간당 대상 서버에서 처리되는 요청의 수
   - Apache Jmeter에서는 시간 단위를 보통 TPS로 표현
