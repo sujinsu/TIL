@@ -56,7 +56,6 @@ public class DemoController {
         for(String header : HEADERS){
             ip = request.getHeader(header);
             if(StringUtils.isEmpty(ip) || UNKOWN.equalsIgnoreCase(ip)){
-                continue;
             } else {
                 find=true;
                 break;
