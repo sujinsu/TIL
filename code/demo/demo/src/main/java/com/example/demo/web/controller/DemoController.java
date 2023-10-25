@@ -1,8 +1,10 @@
 package com.example.demo.web.controller;
 
+import com.example.demo.util.FileUploadUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -18,22 +20,35 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.PostConstruct;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.List;
+
 @Api("Demo")
 @RestController
 @Slf4j
 public class DemoController {
+    @Value("${spring.task.uploadpath}")
+    private String uploadDir;
+    private FileUploadUtil fileUploadUtil;
+
+    @PostConstruct
+    public void init() {
+        this.fileUploadUtil = new FileUploadUtil(uploadDir, 10 * 1024 * 1024L); // 10M
+    }
 
     @ApiOperation(value = "PDF 업로드", notes = "")
     @PostMapping("/upload")
-    public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file,  HttpServletRequest request) {
+    public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file,  HttpServletRequest request) throws IOException {
         if (file.isEmpty()) {
             return ResponseEntity.badRequest().body("Please provide a valid file.");
         }
+        fileUploadUtil.uploadFiles("filePath", List.of(file));
+
         String userInfo = retrieveUserInfo(request);
         // Call method to send the file and user info to another server
         sendFileToServer(file, userInfo);
@@ -92,14 +107,14 @@ public class DemoController {
 
     private File convert(MultipartFile file) {
         File convFile = new File(file.getOriginalFilename());
-        try {
-            convFile.createNewFile();
-            FileOutputStream fos = new FileOutputStream(convFile);
-            fos.write(file.getBytes());
-            fos.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            convFile.createNewFile();
+//            FileOutputStream fos = new FileOutputStream(convFile);
+//            fos.write(file.getBytes());
+//            fos.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         return convFile;
     }
 }
