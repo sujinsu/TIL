@@ -6,6 +6,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,11 +15,32 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 
 @Api("Demo2")
 @RestController
 public class Demo2Controller {
 
+    @ApiOperation(value = "YYYYMM 확인", notes = "")
+    @GetMapping("/isValidDateFormat")
+    public boolean isValidDateFormat(String dateStr) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+        sdf.setLenient(false); // Strict mode
+        try {
+            sdf.parse(dateStr);
+            return true;
+        } catch (ParseException e) {
+            return false;
+        }
+    }
+    @ApiOperation(value = "YYYYMM 날짜 확인", notes = "")
+    @GetMapping("/isYesterday")
+    public boolean isYesterday(String dateStr) {
+        LocalDate yesterday = LocalDate.now().minusDays(1);
+        return yesterday.toString().replace("-", "").equals(dateStr);
+    }
     @ApiOperation(value = "PDF 업로드 확인", notes = "")
     @PostMapping("/upload")
     public ResponseEntity<String> handleFileUpload(@RequestPart("file") MultipartFile file, @RequestPart("userInfo") String userInfo) {
