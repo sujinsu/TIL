@@ -1,6 +1,7 @@
-# JVM & GC
+![image](https://github.com/sujinsu/TIL/assets/87465326/e8ae8233-eb7c-43ac-80d4-9c28662d5ffa)# JVM & GC
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4a50ccd5-0771-4bf1-ba97-dabe26064358/751a95fb-e369-4663-9ecc-63859c5a3eed/Untitled.png)
+![image](https://github.com/sujinsu/TIL/assets/87465326/5678eaf6-79eb-4315-9859-b770d93eaaba)
+
 
 
 
@@ -29,7 +30,8 @@ JVM은 Java의 "Write Once, Run Anywhere"라는 철학을 실현하는 핵심 �
 
 - Runtime Data Area
 
-  ![Runtime Data Area : 프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간](https://prod-files-secure.s3.us-west-2.amazonaws.com/4a50ccd5-0771-4bf1-ba97-dabe26064358/97d1198a-1aaa-41bb-9886-573241642f50/Untitled.png)
+  ![Runtime Data Area : 프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간](![image](https://github.com/sujinsu/TIL/assets/87465326/3208bb63-236f-4a26-ba24-55503a0de6fd)
+)
 
   Runtime Data Area : 프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간
 
@@ -45,10 +47,8 @@ JVM은 Java의 "Write Once, Run Anywhere"라는 철학을 실현하는 핵심 �
 1. **Heap Memory** : 동적으로 할당된 객체가 저장되는 영역입니다. 크게 Young Generation과 Old Generation으로 나뉩니다.
 
    - heap
-
-     ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4a50ccd5-0771-4bf1-ba97-dabe26064358/747bb60b-7c00-495f-bc6e-9323857f5531/Untitled.png)
-
-     ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4a50ccd5-0771-4bf1-ba97-dabe26064358/d32cdaa5-ac6f-42ad-882c-6e017674ed09/Untitled.png)
+     ![image](https://github.com/sujinsu/TIL/assets/87465326/c7c83c56-bfb7-470e-b7f7-01d22c9de682)
+     ![image](https://github.com/sujinsu/TIL/assets/87465326/e037201f-5ad6-45d0-bab1-7bbb280d2906)
 
    - New/**Young Generation** : 새로 생성된 객체들이 위치하는 영역.
 
