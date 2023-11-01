@@ -30,8 +30,7 @@ JVM은 Java의 "Write Once, Run Anywhere"라는 철학을 실현하는 핵심 �
 
 - Runtime Data Area
 
-  ![Runtime Data Area : 프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간](![image](https://github.com/sujinsu/TIL/assets/87465326/3208bb63-236f-4a26-ba24-55503a0de6fd)
-)
+  ![image](https://github.com/sujinsu/TIL/assets/87465326/3208bb63-236f-4a26-ba24-55503a0de6fd)
 
   Runtime Data Area : 프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간
 
@@ -39,12 +38,12 @@ JVM은 Java의 "Write Once, Run Anywhere"라는 철학을 실현하는 핵심 �
 
 - 현재 수행 중인 JVM 명령의 주소를 가짐
 
-1. **JVM** **Stack** : 스레드마다 하나씩 존재하며, 메서드 호출 정보, 지역 변수 등이 저장됩니다.
-2. **Native method stack :** 바이트 코드가 아닌 실제 실행할 수 있는 기계어로 작성된 프로그램 실행
+2. **JVM** **Stack** : 스레드마다 하나씩 존재하며, 메서드 호출 정보, 지역 변수 등이 저장됩니다.
+3. **Native method stack :** 바이트 코드가 아닌 실제 실행할 수 있는 기계어로 작성된 프로그램 실행
 
 - java가 아닌 다른 언어로 작성된 코드를 위한 공간
 
-1. **Heap Memory** : 동적으로 할당된 객체가 저장되는 영역입니다. 크게 Young Generation과 Old Generation으로 나뉩니다.
+4. **Heap Memory** : 동적으로 할당된 객체가 저장되는 영역입니다. 크게 Young Generation과 Old Generation으로 나뉩니다.
 
    - heap
      ![image](https://github.com/sujinsu/TIL/assets/87465326/c7c83c56-bfb7-470e-b7f7-01d22c9de682)
@@ -84,9 +83,9 @@ JVM은 Java의 "Write Once, Run Anywhere"라는 철학을 실현하는 핵심 �
    - 일어나는 도중에 순간적으로 자바 어플리케이션 중지 -> 성능과 안정성 영향
    ```
 
-2. **Metaspace (Java 8 이후)** : 클래스 메타데이터와 메소드 데이터 등이 저장되는 영역. Java 7까지는 PermGen (Permanent Generation)이라는 이름으로 존재했습니다.
+5. **Metaspace (Java 8 이후)** : 클래스 메타데이터와 메소드 데이터 등이 저장되는 영역. Java 7까지는 PermGen (Permanent Generation)이라는 이름으로 존재했습니다.
 
-3. **Code Cache** : JIT 컴파일러에 의해 컴파일된 코드가 저장되는 영역입니다.
+6. **Code Cache** : JIT 컴파일러에 의해 컴파일된 코드가 저장되는 영역입니다.
 
 
 
