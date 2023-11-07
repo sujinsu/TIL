@@ -36,6 +36,7 @@
 ## RestTamplate
 
 - **Multi-Thread와 Blocking방식**
+![image](https://github.com/sujinsu/TIL/assets/87465326/ee81ec5a-5f95-418d-a1a3-1fc6660cae1f)
 
 
 
@@ -95,8 +96,8 @@ BUT 스레드가 다 차는 경우 요청은 Queue에 대기 네트워킹 및 DB
 
 - **Single Thread 와 Non-Blocking 방식**
 - core 당 1개의 Thread 이용
+![image](https://github.com/sujinsu/TIL/assets/87465326/fcd1c873-1ded-45fc-9116-cdb7bcbeaf01)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b244a4b5-f42f-4d5b-914d-2c786e205e70/Untitled.png)
 
 - 각 Request 는 Event Loop 내에 Job으로 등록
 - EventLoop는 각 Job을 제공자에게 요청
