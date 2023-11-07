@@ -15,10 +15,11 @@
 
 
 
+![image](https://github.com/sujinsu/TIL/assets/87465326/4950d08b-f370-40a1-a6e0-dddb58c93c91)
 
 
 💡 **Blocking vs Non-Blocking**
-
+: 제어권 반환 여부
 **Blocking :** 요청하고 응답이 올 때까지 기다리는 방식
 
 **Non-Blocking** : 요청하고 다른 일 수행 후 나중에 응답 신호가 오면 결과를 읽어 처리하는 방식
@@ -26,7 +27,7 @@
 
 
 💡 **동기방식 vs 비동기방식**
-
+: 응답 여부 체크
 **동기방식 :** 요청자와 제공자 사이 계속 Connection
 
 **비동기방식** : Connection이 끊어지고 서로간에 이벤트를 통해 통신
