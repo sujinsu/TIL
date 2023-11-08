@@ -21,6 +21,8 @@
 > 👉 **기본 타입의 객체화**
 >
 > - java.lang 패키지에 포함
+![image](https://github.com/sujinsu/TIL/assets/87465326/f35a91c2-90ae-46db-8b55-35e254ae0715)
+![image](https://github.com/sujinsu/TIL/assets/87465326/210c9a86-077e-4f9e-a7b7-4159eccd16a9)
 
 
 
@@ -169,6 +171,7 @@ boolean bool = Boolean.parseBoolean(str3);
   - 잘못된 타입이 들어올 수 있는 것을 컴파일 단계에서 방지
   - 따로 타입 체크 및 변환 X
   - 코드 재사용성 높아짐
+![image](https://github.com/sujinsu/TIL/assets/87465326/a153dbfd-a944-447e-ae2e-94ec40fb9aec)
 
   
 
