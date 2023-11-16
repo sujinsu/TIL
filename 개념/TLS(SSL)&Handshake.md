@@ -27,6 +27,7 @@
   - 위변조 여부 확인
 - 인증
   - 연결 초기 설정에서 주고받는 인증서를 통해 신뢰할 수 있는 개체인지 인증
+![image](https://github.com/sujinsu/TIL/assets/87465326/bf9ab979-cda0-4a2c-80fe-01bd16d36fb2)
 
 
 
@@ -34,6 +35,7 @@
 - TLS 사용 어플리케이션 프로토콜은 끝에 s가 붙음 (HTTPS, FTPS)
 
 ### 참고
+![image](https://github.com/sujinsu/TIL/assets/87465326/39036573-8f43-4dde-b3c0-9ffa7c1d0483)
 
 
 
@@ -68,6 +70,7 @@ TLS 는 세션과 연결 별로 상태 정보를 유지합니다. Full Handshake
 세션은 한번 성립되면 다음 연결을 위해 상태 유지(sessionId 등) 할 수 있음 ex) 한 번의 연결에서 암호화 방식, 인증서 교환, session id 공유 → 할 일 끝나 연결 끊음 → 다음 연결에 이 세션 정보를 이용하여 연결 가능
 ```
 
+![image](https://github.com/sujinsu/TIL/assets/87465326/7e40e01e-5184-49a9-8f1e-7682ef47b730)
 
 
 
@@ -191,6 +194,7 @@ IP 계층 위에서 동작하는  TCP는 연결 지향 프로토콜
 
 - 신뢰성 보장을 위해 많은 정보 포함
 
+![image](https://github.com/sujinsu/TIL/assets/87465326/67d7011c-c45e-4a59-ba55-3ba5a662414e)
 
 
 **Control Flags**
@@ -216,6 +220,7 @@ IP 계층 위에서 동작하는  TCP는 연결 지향 프로토콜
 
 FLAG 2가지 사용 (SYN, ACK)
 
+![image](https://github.com/sujinsu/TIL/assets/87465326/457d7176-9efe-4cec-a0b3-d2adf0900b87)
 
 
 - 최초 클라이언트 쪽에서 SYN FLAG와 SeqNumber 를 임의로 설정하여 보내줌
@@ -232,6 +237,7 @@ FLAG 2가지 사용 (SYN, ACK)
   - 이후 클라이언트도 연결 확립 상태 (ESTABLISHED)
 
 
+![image](https://github.com/sujinsu/TIL/assets/87465326/e7c9d705-ba52-4197-bf88-a72beeaaccef)
 
 
 
@@ -240,6 +246,7 @@ FLAG 2가지 사용 (SYN, ACK)
 ## 연결 종료 (4-way handshake)
 
 정상적인 연결 종료는 FIN, ACK 의 플래그를 통해 이루어짐
+![image](https://github.com/sujinsu/TIL/assets/87465326/2d7be11c-9232-4b27-8b61-16c6b250a385)
 
 
 
@@ -259,3 +266,8 @@ FLAG 2가지 사용 (SYN, ACK)
 - 서버는 이후 소켓을 받는 시스템 콜(close) 호출 전까지 대기 상태, 소켓 종료 후 `FIN` + `ACK`보냄
 
 - 서버로부터 `FIN` 을 받은 클라이언트는 `ACK` 응답을 하여 2MSL만큼의 시간(보통 1~4분) 이후 연결 종료 상태 (CLOSED)
+
+
+
+참고 자료)
+https://reakwon.tistory.com/87?category=300675
