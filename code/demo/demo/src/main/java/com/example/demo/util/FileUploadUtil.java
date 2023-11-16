@@ -23,6 +23,12 @@ public class FileUploadUtil {
         this.maxFileSize = maxFileSize;
     }
 
+    // 허용된 파일 확장자 목록을 상수로 정의
+    private static final Set<String> PERMITTED_EXTENSIONS = new HashSet<>(
+            Arrays.asList("jpg", "jpeg", "tif", "tiff", "gif", "png", "bmp", "doc",
+                    "docx", "pdf", "xls", "txt", "xlsx", "hwp", "ppt", "csv",
+                    "pptx", "hwpx"));
+
     public List<FileInfo> findFilesInfo(String path) throws IOException {
         // 디렉토리 경로
         Path directoryPath = Paths.get(baseUploadPath, path);
@@ -59,20 +65,13 @@ public class FileUploadUtil {
         return totalSize > this.maxFileSize;
     }
 
-    // TODO 추후 필요한 경우 상수로 관리 하기
     public Boolean isPermittedFileNameExtension(List<MultipartFile> files){
-        return files.stream().anyMatch((f) -> {
+
+        return files.stream().anyMatch(f ->{
             String fileExtension = FilenameUtils.getExtension(f.getOriginalFilename()).toLowerCase();
-            return fileExtension.equals("jpg")  || fileExtension.equals("jpeg")
-                    || fileExtension.equals("tif")  || fileExtension.equals("tiff")
-                    || fileExtension.equals("gif")  || fileExtension.equals("png")
-                    || fileExtension.equals("bmp")  || fileExtension.equals("doc")
-                    || fileExtension.equals("docx") || fileExtension.equals("pdf")
-                    || fileExtension.equals("xls")  || fileExtension.equals("txt")
-                    || fileExtension.equals("xlsx") || fileExtension.equals("hwp")
-                    || fileExtension.equals("ppt")  || fileExtension.equals("csv")
-                    || fileExtension.equals("pptx") || fileExtension.equals("hwpx");
+            return PERMITTED_EXTENSIONS.contains(fileExtension);
         });
+
     }
 
     public void uploadFiles(String path, List<MultipartFile> files) throws IOException {
