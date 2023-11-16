@@ -1,4 +1,4 @@
-![image](https://github.com/sujinsu/TIL/assets/87465326/b47ff21b-d8e4-4fb8-a8be-dde5cc06d206)# TLS (SSL) & Handshake
+# TLS (SSL) & Handshake
 
 
 
