@@ -266,3 +266,8 @@ FLAG 2가지 사용 (SYN, ACK)
 - 서버는 이후 소켓을 받는 시스템 콜(close) 호출 전까지 대기 상태, 소켓 종료 후 `FIN` + `ACK`보냄
 
 - 서버로부터 `FIN` 을 받은 클라이언트는 `ACK` 응답을 하여 2MSL만큼의 시간(보통 1~4분) 이후 연결 종료 상태 (CLOSED)
+
+
+
+참고 자료)
+https://reakwon.tistory.com/87?category=300675
