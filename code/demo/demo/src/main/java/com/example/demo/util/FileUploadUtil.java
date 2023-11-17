@@ -87,22 +87,22 @@ public class FileUploadUtil {
             Files.createDirectories(targetDirectory);
         }
 
-        for (MultipartFile multipartFile : files) {
-            String fileName = multipartFile.getOriginalFilename();
-            String baseName = FilenameUtils.getBaseName(fileName);
-            String extension = FilenameUtils.getExtension(fileName);
-
-            Path fullPath = targetDirectory.resolve(fileName);
-
-            if (Files.exists(fullPath)) {
-                int num = 1;
-                while (Files.exists(fullPath.resolveSibling(String.format("%s(%d)%s%s", baseName, num, FilenameUtils.EXTENSION_SEPARATOR, extension)))) {
-                    num++;
-                }
-                fullPath = fullPath.resolveSibling(String.format("%s(%d)%s%s", baseName, num, FilenameUtils.EXTENSION_SEPARATOR, extension));
-            }
-            multipartFile.transferTo(fullPath);
-        }
+//        for (MultipartFile multipartFile : files) {
+//            String fileName = multipartFile.getOriginalFilename();
+//            String baseName = FilenameUtils.getBaseName(fileName);
+//            String extension = FilenameUtils.getExtension(fileName);
+//
+//            Path fullPath = targetDirectory.resolve(fileName);
+//
+//            if (Files.exists(fullPath)) {
+//                int num = 1;
+//                while (Files.exists(fullPath.resolveSibling(String.format("%s(%d)%s%s", baseName, num, FilenameUtils.EXTENSION_SEPARATOR, extension)))) {
+//                    num++;
+//                }
+//                fullPath = fullPath.resolveSibling(String.format("%s(%d)%s%s", baseName, num, FilenameUtils.EXTENSION_SEPARATOR, extension));
+//            }
+//            multipartFile.transferTo(fullPath);
+//        }
     }
 
     @Getter
