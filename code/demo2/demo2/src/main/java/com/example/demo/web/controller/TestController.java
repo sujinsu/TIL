@@ -68,7 +68,11 @@ public class TestController {
     public ResponseVo ragFileUploadCall(@PathVariable String chatSessionId, @RequestPart(value="file", required = true) MultipartFile file) {
 //        MultipartFile file = files.get(0);
         ResponseVo responseVo = new ResponseVo();
-        new Status();
+        ResponseVo.SysInfo sysInfo = new ResponseVo.SysInfo();
+        ResponseVo.SysInfo.Status status = new ResponseVo.SysInfo.Status();
+
+        sysInfo.setStatus(status);
+        responseVo.setSysInfo(sysInfo);
         System.out.println("User Info: " + chatSessionId);
         try {
             System.out.println("Received file: " + file.getOriginalFilename());
