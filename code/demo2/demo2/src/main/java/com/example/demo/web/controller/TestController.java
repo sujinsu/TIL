@@ -2,6 +2,7 @@ package com.example.demo.web.controller;
 
 
 
+import com.example.demo.common.exception.CustomRuntimeException;
 import com.example.demo.modules.value.ChatResponseVo;
 import com.example.demo.modules.value.ResponseVo;
 import com.example.demo.modules.value.RagFileResponseVo;
@@ -102,8 +103,10 @@ public class TestController {
 
         } catch (Exception e) {
             e.printStackTrace();
-            return responseVo;
+            throw new CustomRuntimeException("ERRRRRRRRRRRRRRROr");
+
         }
+
         return responseVo;
     }
 }
