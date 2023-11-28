@@ -26,6 +26,7 @@
 | R2DBC | [R2DBC](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/R2DBC.md) | :white_check_mark: |
 | TLS(SSL)&Handshake | [TLS(SSL)&Handshake](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/TLS(SSL)&Handshake.md) | :white_check_mark: |
 | MockMvc | | :white_large_square: |
+| WebMvcConfigurer | | :white_large_square: |
 |  | | :white_large_square: |
 
 
