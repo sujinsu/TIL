@@ -136,7 +136,7 @@ exports.limitRequests = functions.https.onRequest(async (req, res) => {
   }
 });
 ```
-```
+```jsx
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 admin.initializeApp();
