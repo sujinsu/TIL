@@ -1,8 +1,9 @@
 ### 선행조건
 
-- node.js 설치
+- node.js 설치 ([Node.js](https://nodejs.org/en))
+- firebase 계정 생성
 
-[Node.js](https://nodejs.org/en)
+
 
 ### Firebase
 
