@@ -212,26 +212,25 @@ exports.limitRequests = functions.https.onRequest((req, res) => {
     }
   });
 });
-
+```
 - cors 설정 확인
     - 브라우저의 CORS 정책에 영향 x -⇒ CORS 정책이 클라이언트 측에서만 적용된다는 것을 확인하는 데 유용
         - cURL 또는 다른 커맨드 라인 도구 사용
         - postman
     - 간단한 html
     ```
-<!DOCTYPE html>
-<html>
-<body>
-<script>
-  fetch('https://us-central1-fir-3c30d.cloudfunctions.net/limitRequests')
-    .then(response => response.text())
-    .then(data => console.log(data))
-    .catch(error => console.error('Error:', error));
-</script>
-</body>
-</html>
-```
-```
+  <!DOCTYPE html>
+  <html>
+  <body>
+  <script>
+    fetch('https://us-central1-fir-3c30d.cloudfunctions.net/limitRequests')
+      .then(response => response.text())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
+  </script>
+  </body>
+  </html>
+  ```
   - ![image](https://github.com/sujinsu/TIL/assets/87465326/40ae9f85-730e-487a-8732-15a51aeb0402)
 
 
