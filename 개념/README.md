@@ -28,7 +28,6 @@
 | firebase | [firebase](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/firebase.md) | :white_check_mark: |
 | 레이어별테스트 | [레이어별테스트](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/레이어별테스트.md) | :white_check_mark: |
 | k8s | [k8s](https://github.com/sujinsu/TIL/blob/main/%EA%B0%9C%EB%85%90/k8s.md) | :white_check_mark: |
-| MockMvc | | :white_large_square: |
 | WebMvcConfigurer | | :white_large_square: |
 |  | | :white_large_square: |
 
