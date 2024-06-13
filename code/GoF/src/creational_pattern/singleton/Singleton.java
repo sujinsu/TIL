@@ -1,6 +1,6 @@
-package singleton;
+package creational_pattern.singleton;
 
-import singleton.domain.Person;
+import creational_pattern.singleton.domain.Person;
 
 /**
  * 싱글톤 구현 방법 : static, sync, docblechecking,eager init, innerclass, enum

@@ -1,4 +1,4 @@
-package singleton.domain;
+package creational_pattern.singleton.domain;
 
 public class Person {
 
