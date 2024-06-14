@@ -1,4 +1,4 @@
-package com.example.GoF.creational_pattern.factory.before;
+package com.example.creational_pattern.factory.after;
 
 public class Ship {
 

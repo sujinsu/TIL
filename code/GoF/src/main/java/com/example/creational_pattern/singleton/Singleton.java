@@ -1,7 +1,7 @@
-package com.example.GoF.creational_pattern.singleton;
+package com.example.creational_pattern.singleton;
 
 
-import com.example.GoF.creational_pattern.singleton.domain.Person;
+import com.example.creational_pattern.singleton.domain.Person;
 
 /**
  * 싱글톤 구현 방법 : static, sync, docblechecking,eager init, innerclass, enum

@@ -1,4 +1,4 @@
-package com.example.GoF.creational_pattern.factory.java;//package creational_pattern.factory.java;
+package com.example.creational_pattern.factory.java;//package creational_pattern.factory.java;
 //
 //import org.springframework.beans.factory.BeanFactory;
 //import org.springframework.context.annotation.AnnotationConfigApplicationContext;

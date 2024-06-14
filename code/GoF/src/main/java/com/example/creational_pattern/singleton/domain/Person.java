@@ -1,4 +1,4 @@
-package com.example.GoF.creational_pattern.singleton.domain;
+package com.example.creational_pattern.singleton.domain;
 
 public class Person {
 

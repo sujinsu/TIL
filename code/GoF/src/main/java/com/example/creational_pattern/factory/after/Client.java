@@ -1,4 +1,4 @@
-package com.example.GoF.creational_pattern.factory.after;
+package com.example.creational_pattern.factory.after;
 
 /**
  * 확장에는 열려있고, 변경에 닫혀있는 구조로 만들기 !

@@ -1,4 +1,4 @@
-package com.example.GoF.creational_pattern.factory.java;//package creational_pattern.factory.java;
+package com.example.creational_pattern.factory.java;//package creational_pattern.factory.java;
 //
 //public class SimpleFactory {
 //

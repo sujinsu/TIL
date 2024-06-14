@@ -1,4 +1,4 @@
-package com.example.GoF.creational_pattern.factory.after;
+package com.example.creational_pattern.factory.after;
 
 public abstract class DefaultShipFactory implements ShipFactory{
 
