@@ -1,4 +1,4 @@
-package creational_pattern.factory.after;
+package com.example.GoF.creational_pattern.factory.after;
 
 public interface ShipFactory {
 
@@ -26,5 +26,5 @@ public interface ShipFactory {
 
     Ship createShip();
 
-    private void sendEmailTo(String email, Ship ship){System.out.println(ship.getName() + " 다 만들었습니다.");};
+    void sendEmailTo(String email, Ship ship);
 }

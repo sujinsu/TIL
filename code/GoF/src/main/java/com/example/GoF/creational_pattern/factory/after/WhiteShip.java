@@ -1,4 +1,4 @@
-package creational_pattern.factory.after;
+package com.example.GoF.creational_pattern.factory.after;
 
 public class WhiteShip extends Ship{
 

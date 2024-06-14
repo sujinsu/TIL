@@ -1,4 +1,4 @@
-package creational_pattern.singleton.value;
+package com.example.GoF.creational_pattern.singleton.value;
 
 /**
  * 싱글톤 구현 심플한 방법 (추천)
