@@ -1,4 +1,4 @@
-package com.example.creational_pattern.abstract_factory._before;
+package com.example.creational_pattern.abstract_factory.before;
 
 
 import com.example.creational_pattern.factory.after.DefaultShipFactory;
