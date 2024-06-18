@@ -1,5 +1,12 @@
 package com.example.creational_pattern.factory.after;
 
+import com.example.creational_pattern.abstract_factory.after.Anchor;
+import com.example.creational_pattern.abstract_factory.after.Wheel;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Ship {
 
     private String name;
@@ -8,29 +15,11 @@ public class Ship {
 
     private String logo;
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    private Wheel wheel;
 
-    public String getColor() {
-        return color;
-    }
+    private Anchor anchor;
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getLogo() {
-        return logo;
-    }
-
-    public void setLogo(String logo) {
-        this.logo = logo;
-    }
 
     @Override
     public String toString() {

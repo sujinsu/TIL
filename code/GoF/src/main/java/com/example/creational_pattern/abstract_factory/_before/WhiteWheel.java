@@ -1,5 +1,7 @@
 package com.example.creational_pattern.abstract_factory._before;
 
 
-public class WhiteWheel {
+import com.example.creational_pattern.abstract_factory.after.Wheel;
+
+public class WhiteWheel implements Wheel {
 }
