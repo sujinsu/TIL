@@ -9,6 +9,7 @@ import java.time.LocalDate;
  */
 public interface TourPlanBuilder {
 
+    TourPlanBuilder newInstance();
     TourPlanBuilder title(String title);
 
     TourPlanBuilder nightsAndDays(int nights, int days);

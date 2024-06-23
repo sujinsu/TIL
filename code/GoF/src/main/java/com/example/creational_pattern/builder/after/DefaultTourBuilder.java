@@ -9,17 +9,23 @@ import java.util.List;
 
 public class DefaultTourBuilder implements TourPlanBuilder{
 
-    private String title;
-    private int nights;
-    private int days;
-    private LocalDate startDate;
-    private String whereToStay;
-    private List<DetailPlan> plans;
+    private TourPlan tourPlan;
+    TourPlanBuilder newInstance(){
+        this.tourPlan = new TourPlan();
+        return this;
+    }
+
+//    private String title;
+//    private int nights;
+//    private int days;
+//    private LocalDate startDate;
+//    private String whereToStay;
+//    private List<DetailPlan> plans;
 
     @Override
     public TourPlanBuilder nightsAndDays(int nights, int days) {
-        this.nights = nights;
-        this.days = days;
+        this.tourPlan.setNights(nights);
+        this.tourPlan.setDays(days);
         return this;
     }
 
