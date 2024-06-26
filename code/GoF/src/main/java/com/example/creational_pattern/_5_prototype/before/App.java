@@ -17,7 +17,7 @@ public class App {
         String url = githubIssue.getUrl();
         System.out.println(url);
 
-//        GithubIssue clone  = githubIssue.clone(); // clone 메서드를 만들었다고 가정
+//        GithubIssue clone  = githubIssue.clone(); // clone 메서드를 만들었다고 가정 <- Object에 존재하는 메서드
         // TODO clone != githubIssue
         // TODO clone.equals(githubIssue) => true
     }
