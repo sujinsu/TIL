@@ -1,10 +1,5 @@
-package com.example.structural_pattern._6_adapter.before.security;
+package com.example.structural_pattern._6_adapter.after.security;
 
-/**
- *  LoginHandler : client 코드
- *
- *  UserDetails, UserDetailsService : Target interface
- */
 public class LoginHandler {
 
     UserDetailsService userDetailsService;

@@ -1,10 +1,5 @@
-package com.example.structural_pattern._6_adapter.before;
+package com.example.structural_pattern._6_adapter.after;
 
-/**
- * security 디렉토리(패키지)와 무관하게 애플리케이션에서 만드는 account
- *
- * account는 해당 애플리케이션에서 사용하고, security 패키지는 다른 곳에서 재사용 가능
- */
 public class Account {
 
     private String name;
