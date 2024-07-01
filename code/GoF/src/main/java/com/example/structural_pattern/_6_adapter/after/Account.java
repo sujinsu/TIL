@@ -1,5 +1,9 @@
 package com.example.structural_pattern._6_adapter.after;
 
+/**
+ * implements userdetail 하면 어댑터 없어도 됨.
+ *  -> 단일책임원칙에 덜 가까움. 어댑터를 만들어 새 클래스로 하는게 객체지향적인 코딩
+ */
 public class Account {
 
     private String name;
