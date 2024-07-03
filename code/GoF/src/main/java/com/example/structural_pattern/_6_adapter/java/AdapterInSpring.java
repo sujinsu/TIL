@@ -9,6 +9,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
  * -> DispatcherServlet.doDispatch 읽어 보기
  * ㄴ 핸들러는 object : 특정한 하나가 아니라 다양한 형태가 될 수 있기 때문에
  * ㄴ spring은 http sevlet request와 response 를 받아서 model and view를 넘겨주는 어댑터를 제공해준다.
+ * ㄴ spring에서 제공하는 HandlerAdapter 는 어댑터용 인터페이스
  */
 public class AdapterInSpring {
 
