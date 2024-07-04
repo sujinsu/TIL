@@ -5,6 +5,12 @@ import org.springframework.mail.MailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.transaction.PlatformTransactionManager;
 
+/**
+ * 브릿지 패턴의 일부분이라고 할 수 있는 구체적인 것의 인터페이스를 스프링이 많이 만듦
+ *
+ * MailSender : 구체적 부분의 인터페이스
+ * java Mail Sender : 구현체
+ */
 public class BridgeInSpring {
 
     public static void main(String[] args) {
