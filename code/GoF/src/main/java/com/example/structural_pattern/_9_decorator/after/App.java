@@ -7,8 +7,10 @@ public class App {
     private static boolean enabledTrimming = true;
 
     public static void main(String[] args) {
-        CommentService commentService = new DefaultCommentService();
+        CommentService commentService = new DefaultCommentService(); // 기본적으로 사용
 
+        // 구분값을 통해 런타임에 적용
+        // 상속을 사용했을 때와 달리 위임은 추가적으로 데코레이터를 감싸서 처리 ㅇ
         if (enabledSpamFilter) {
             commentService = new SpamFilteringCommentDecorator(commentService);
         }

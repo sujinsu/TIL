@@ -11,6 +11,11 @@ public class TrimmingCommentDecorator extends CommentDecorator {
         super.addComment(trim(comment));
     }
 
+    /**
+     * 부가적인 작업 추가
+     * @param comment
+     * @return
+     */
     private String trim(String comment) {
         return comment.replace("...", "");
     }

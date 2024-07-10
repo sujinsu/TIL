@@ -13,6 +13,11 @@ public class SpamFilteringCommentDecorator extends CommentDecorator {
         }
     }
 
+    /**
+     * 부가적인 기능 추가
+     * @param comment
+     * @return
+     */
     private boolean isNotSpam(String comment) {
         return !comment.contains("http");
     }
