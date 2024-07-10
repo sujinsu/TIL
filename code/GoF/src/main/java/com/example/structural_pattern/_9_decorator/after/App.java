@@ -1,5 +1,12 @@
 package com.example.structural_pattern._9_decorator.after;
 
+/**
+ * Decorator Pattern
+ * (+) : (단일 책임 원칙) - 조합해서 쓸 수 있음. 각자 해야할 일만 하고 있음.
+ * (+) : (Open Closed :확장에는 열려있고, 변경에는 닫힘) - 런타임에 동적으로 기능 변경 가능 (상속이면 정적으로 해당 클래스를 만들어놔야 함 ex.trimAndSpam.. )
+ * (+) : (DI : 의존성 역전) - client에 interface 사용
+ * (-) : 데코레이터 조합 코드가 복잡해질 수 있음 (기능이 추가될 수록 단점 아닐지도?)
+ */
 public class App {
 
     private static boolean enabledSpamFilter = true;
