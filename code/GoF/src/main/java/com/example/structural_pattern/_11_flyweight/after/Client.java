@@ -1,5 +1,11 @@
 package com.example.structural_pattern._11_flyweight.after;
 
+
+/**
+ * 플라이웨이트 패턴
+ * (+) : 애플리케이션에서 사용하는 메모리를 줄일 수 있다
+ * (-) : 코드 복잡도 증가
+ */
 public class Client {
 
     public static void main(String[] args) {
