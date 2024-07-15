@@ -48,6 +48,9 @@ dependencies {
 
 	// Spring Context support
 	implementation 'org.springframework:spring-context:5.3.22'
+
+	// AOP
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
 }
 
 tasks.named('test') {

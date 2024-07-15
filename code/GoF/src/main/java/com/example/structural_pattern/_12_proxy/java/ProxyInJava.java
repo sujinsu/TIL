@@ -1,6 +1,7 @@
 package com.example.structural_pattern._12_proxy.java;
 
-import me.whiteship.designpatterns._02_structural_patterns._12_proxy._02_after.DefaultGameService;
+
+import com.example.structural_pattern._12_proxy.after.DefaultGameService;
 
 import java.lang.reflect.Proxy;
 
