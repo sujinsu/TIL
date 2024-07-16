@@ -2,7 +2,7 @@ package com.example.structural_pattern._12_proxy.java;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service // bean으로 등록 >>  aop 적용 가능
 public class GameService {
 
     public void startGame() {

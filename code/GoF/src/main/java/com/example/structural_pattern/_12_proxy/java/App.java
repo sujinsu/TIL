@@ -6,6 +6,9 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+/**
+ * 애플리케이션 실행을 위한 부트 설정
+ */
 @SpringBootApplication
 public class App {
 
@@ -18,7 +21,7 @@ public class App {
     @Bean
     public ApplicationRunner applicationRunner(GameService gameService) {
         return args -> {
-            gameService.startGame();
+            gameService.startGame(); // 호출
         };
     }
 }
