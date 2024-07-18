@@ -1,6 +1,7 @@
 package com.example.behavioral_patterns._14_command.after;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._14_command._01_before.Game;
+
+import com.example.behavioral_patterns._14_command.before.Game;
 
 public class GameStartCommand implements Command {
 

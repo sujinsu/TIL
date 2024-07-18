@@ -1,6 +1,6 @@
 package com.example.behavioral_patterns._14_command.java;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._14_command._02_after.Command;
+import com.example.behavioral_patterns._14_command.after.Command;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 
 import javax.sql.DataSource;
