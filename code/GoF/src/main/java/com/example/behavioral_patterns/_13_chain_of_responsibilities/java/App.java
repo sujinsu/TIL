@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
-@ServletComponentScan
+@ServletComponentScan // 서블릿 필터 적용하는 방법 중 간단한 방법
 @SpringBootApplication
 public class App {
 
