@@ -1,5 +1,8 @@
 package com.example.behavioral_patterns._14_command.before;
 
+/**
+ * 리시버 (receiver)
+ */
 public class Light {
 
     private boolean isOn;

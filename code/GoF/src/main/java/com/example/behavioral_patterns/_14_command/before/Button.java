@@ -1,5 +1,8 @@
 package com.example.behavioral_patterns._14_command.before;
 
+/**
+ * 인보커 (invoker)
+ */
 public class Button {
 
     private Light light;
