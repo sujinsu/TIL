@@ -2,6 +2,9 @@ package com.example.behavioral_patterns._15_interpreter.after;
 
 import java.util.Map;
 
+/**
+ * 익스프레션
+ */
 public class PlusExpression implements PostfixExpression {
 
     private PostfixExpression left;
