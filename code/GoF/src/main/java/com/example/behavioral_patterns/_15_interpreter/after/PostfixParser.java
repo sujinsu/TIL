@@ -31,6 +31,7 @@ public class PostfixParser {
                 PostfixExpression left = stack.pop();
 //                return new MinusExpression(left, right);
                 return minus(left, right);
+            // * 처리 로직 추가
             default:
 //                return new VariableExpression(c);
                 return variable(c);

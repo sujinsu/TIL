@@ -2,6 +2,10 @@ package com.example.behavioral_patterns._15_interpreter.java;
 
 import java.util.regex.Pattern;
 
+/**
+ * Interpreter pattern : JVM 전체로 보면 컴파일러에 적용 & 정규표현식에 적용
+ *
+ */
 public class InterpreterInJava {
 
     public static void main(String[] args) {

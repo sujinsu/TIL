@@ -22,6 +22,11 @@ public interface PostfixExpression {
         return context -> left.interpret(context) - right.interpret(context);
     }
 
+    static PostfixExpression multiply(PostfixExpression left, PostfixExpression right){
+        // 람다로 표현 가능
+        return context -> left.interpret(context) * right.interpret(context);
+    }
+
     static PostfixExpression variable(Character c){
         return context -> context.get(c);
         // 람다로 표현 가능

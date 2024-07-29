@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyService implements ApplicationRunner {
 
+    // {}안에  SpEL 을 넣으면 Expression Language parser, expression 으로 값을 구해서 넣어줌
     @Value("#{2 + 5}")
     private String value;
 
