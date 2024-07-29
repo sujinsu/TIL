@@ -1,6 +1,7 @@
 package com.example.behavioral_patterns._16_iterator.after;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._16_iterator._01_before.Post;
+
+import com.example.behavioral_patterns._16_iterator.before.Post;
 
 import java.util.Iterator;
 import java.util.List;
