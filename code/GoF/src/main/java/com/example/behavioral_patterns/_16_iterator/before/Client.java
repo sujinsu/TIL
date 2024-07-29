@@ -3,8 +3,15 @@ package com.example.behavioral_patterns._16_iterator.before;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Iterator pattern : 집합 객체의 내부 구조를 노출 시키지 않고 순회하는 방법 제공
+ */
 public class Client {
 
+    /**
+     * Post가 List 라는 것을 Client가 ㅇ라고 있음 >>  나중에 list가 아닌 set 등 인터페이스 변경시 클라이언트 코드에도 영향
+     * @param args
+     */
     public static void main(String[] args) {
         Board board = new Board();
         board.addPost("디자인 패턴 게임");
