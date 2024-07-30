@@ -12,6 +12,10 @@ import java.util.List;
  * ㄴ hasNext() : 다음 element가 있는지 확인
  *
  * Aggregate inteface (있을 수도 있고, 없을 수도 있음) 여기선 Board
+ *
+ * (+) : 내부 구조를 몰라도 됨. 순회 로직만 알면 됨. 책임 분리 O (SRP)
+ * (+) : 기존 코드 변경이 없진 않지만, client 입장에선 OCP 달성이라 볼 수 있음
+*          BUT concrete aggregate는 변경 생길 수도 있음 (새로운 interator 생성 필요시) >> iterator 를 주입받아 사용하는 방식이면 변경 최소화 가능
  */
 public class Client {
 

@@ -29,7 +29,8 @@ public class IteratorInJava {
 //        board.getPosts().iterator().forEachRemaining(p -> System.out.println(p.getTitle()));
 
 
-        // TODO Streaming API for XML(StAX), 이터레이터 기반의 API
+        // TODO Streaming API for XML(StAX), 이터레이터 기반의 API = 콘솔 기반
+        // cf) SAX = Simple API for XML = 읽어들일 때만
         XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
         XMLEventReader reader = xmlInputFactory.createXMLEventReader(new FileInputStream("Book.xml"));
 
