@@ -2,6 +2,9 @@ package com.example.behavioral_patterns._17_mediator.after;
 
 import java.time.LocalDateTime;
 
+/**
+ * mediator 역할 !! >> 의존성을 다 여기로 몰아넣음
+ */
 public class FrontDesk {
 
     private CleaningService cleaningService = new CleaningService();
