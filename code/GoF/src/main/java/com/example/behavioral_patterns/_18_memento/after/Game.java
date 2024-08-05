@@ -22,10 +22,18 @@ public class Game {
         this.blueTeamScore = blueTeamScore;
     }
 
+    /**
+     * memento 저장 메서드
+     * @return
+     */
     public GameSave save() {
         return new GameSave(this.blueTeamScore, this.redTeamScore);
     }
 
+    /**
+     * memento 복원 메서드
+     * @param gameSave
+     */
     public void restore(GameSave gameSave) {
         this.blueTeamScore = gameSave.getBlueTeamScore();
         this.redTeamScore = gameSave.getRedTeamScore();
