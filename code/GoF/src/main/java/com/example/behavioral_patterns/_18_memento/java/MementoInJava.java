@@ -1,6 +1,7 @@
 package com.example.behavioral_patterns._18_memento.java;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._18_memento._01_before.Game;
+
+import com.example.behavioral_patterns._18_memento.before.Game;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
