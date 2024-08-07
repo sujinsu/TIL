@@ -4,6 +4,7 @@ package com.example.behavioral_patterns._19_observer.before;
  * Observer pattern : 상태 변경 감지 및 반응을 해야 하는 경우 적용
  * - Subject : 여러 observer 등록 및 해지 기능 - subscribe(Observer), unsubscribe(Observer), notify()
  *   ㄴ 상태 변경 시 자신에게 등록된 observer를 순회하며 observer 메서드 호출
+ *   ㄴ  observer가 가진 메서드를 알기 위해 Subject가 object타입으로 가지고 있고, observer는 인터페이스 제공 권장
  *
  * - Observer : - update()
  *
