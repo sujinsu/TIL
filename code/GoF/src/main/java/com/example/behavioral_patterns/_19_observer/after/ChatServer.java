@@ -1,5 +1,6 @@
 package com.example.behavioral_patterns._19_observer.after;
 
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -19,6 +20,7 @@ public class ChatServer {
      * @param subscriber
      */
     public void register(String subject, Subscriber subscriber) {
+    // WeakReference 알아보기 >> unregister 없이도 메모리 회수 가능 >> 언제 없어진다 보장 x , 기대 x, 다른 reference 없어져도 괜찮으면~ 등 사용조건 확인 필요
         if (this.subscribers.containsKey(subject)) {
             this.subscribers.get(subject).add(subscriber);
         } else {

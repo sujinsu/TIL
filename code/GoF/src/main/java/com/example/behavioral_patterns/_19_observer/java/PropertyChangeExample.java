@@ -4,6 +4,10 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
+/**
+ * observer : listener 구현
+ *
+ */
 public class PropertyChangeExample {
 
     static class User implements PropertyChangeListener {
@@ -26,7 +30,9 @@ public class PropertyChangeExample {
         }
 
         public void add(String message) {
+            // firePropertyChange 특정 propertyName 에 대해서만 활동하게끔 가능 >> 만들 때부터 지정해야 함.
             support.firePropertyChange("eventName", null, message);
+            // support.fireIndexedPropertyChange(); // 우선 순위 조정 가능
         }
     }
 

@@ -3,6 +3,11 @@ package com.example.behavioral_patterns._19_observer.java;
 import java.util.Observable;
 import java.util.Observer;
 
+
+/**
+ * Observer : interface
+ * Observable : class
+ */
 public class ObserverInJava {
 
     static class User implements Observer {
@@ -12,6 +17,9 @@ public class ObserverInJava {
         }
     }
 
+    /**
+     * setChanged 되어야 알림 받을 수 있음 등 >> Deprecate 이유
+     */
     static class Subject extends Observable {
         public void add(String message) {
             setChanged();
