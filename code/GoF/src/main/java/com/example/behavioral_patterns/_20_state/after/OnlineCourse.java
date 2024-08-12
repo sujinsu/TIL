@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class OnlineCourse {
 
-    private State state = new Draft(this);
+    private State state = new Draft(this); // 의존하고 있는 타입이 인터페이스 >> 새로운 상태 추가가 쉬움!
 
     private List<Student> students = new ArrayList<>();
 
