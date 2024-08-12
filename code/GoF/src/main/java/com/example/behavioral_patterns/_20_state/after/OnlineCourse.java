@@ -3,6 +3,9 @@ package com.example.behavioral_patterns._20_state.after;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * context
+ */
 public class OnlineCourse {
 
     private State state = new Draft(this);

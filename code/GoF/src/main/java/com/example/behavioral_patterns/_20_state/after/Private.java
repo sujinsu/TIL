@@ -1,5 +1,7 @@
 package com.example.behavioral_patterns._20_state.after;
-
+/**
+ * concrete state >> context 가져야 함 (onlineCourse)
+ */
 public class Private implements State {
 
     private OnlineCourse onlineCourse;
