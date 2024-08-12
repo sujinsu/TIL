@@ -1,4 +1,4 @@
-package com.example.behavioral_patterns._21_strategy._03_java;
+package com.example.behavioral_patterns._21_strategy.java;
 
 import org.springframework.beans.factory.xml.BeanDefinitionParser;
 import org.springframework.cache.CacheManager;
@@ -7,7 +7,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.annotation.Transactional;
 
 public class StrategyInSpring {
 

@@ -1,7 +1,4 @@
-package com.example.behavioral_patterns._21_strategy._02_after;
-
-import java.util.Collections;
-import java.util.Comparator;
+package com.example.behavioral_patterns._21_strategy.after;
 
 public class Client {
 

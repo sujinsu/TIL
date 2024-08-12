@@ -1,4 +1,4 @@
-package com.example.behavioral_patterns._21_strategy._03_java;
+package com.example.behavioral_patterns._21_strategy.java;
 
 import java.util.ArrayList;
 import java.util.Collections;

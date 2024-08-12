@@ -1,4 +1,4 @@
-package com.example.behavioral_patterns._21_strategy._02_after;
+package com.example.behavioral_patterns._21_strategy.after;
 
 public class Fastest implements Speed{
     @Override
