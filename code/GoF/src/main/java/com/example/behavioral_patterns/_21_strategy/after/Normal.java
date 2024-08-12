@@ -1,5 +1,8 @@
 package com.example.behavioral_patterns._21_strategy.after;
 
+/**
+ * concrete strategy
+ */
 public class Normal implements Speed {
     @Override
     public void blueLight() {

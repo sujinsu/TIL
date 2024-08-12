@@ -1,5 +1,8 @@
 package com.example.behavioral_patterns._21_strategy.after;
 
+/**
+ * concrete strategy
+ */
 public class Faster implements Speed {
     @Override
     public void blueLight() {
