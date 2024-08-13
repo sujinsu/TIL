@@ -1,4 +1,4 @@
-package com.example.behavioral_patterns._22_template._03_java;
+package com.example.behavioral_patterns._22_template.java;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.*;

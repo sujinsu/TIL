@@ -1,4 +1,4 @@
-package com.example.behavioral_patterns._22_template._01_before;
+package com.example.behavioral_patterns._22_template.before;
 
 public class Client {
 
