@@ -1,5 +1,8 @@
 package com.example.behavioral_patterns._22_template.after;
 
+/**
+ *
+ */
 public class Client {
 
     public static void main(String[] args) {
