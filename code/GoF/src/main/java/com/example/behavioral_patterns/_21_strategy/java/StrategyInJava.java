@@ -14,6 +14,7 @@ public class StrategyInJava {
 
         System.out.println(numbers);
 
+        // Comparator : 대표적인 strategy pattern
         Collections.sort(numbers, Comparator.naturalOrder());
 
         System.out.println(numbers);
