@@ -34,17 +34,9 @@ public class pro_Dijkstra_가장먼노드_251113 {
             }
         }
 
-        int answer = 0;
-        int maxV = 0;
-        for(int i=1;i<=n;i++){
-            if(maxV < dist[i]){
-                maxV = dist[i];
-                answer = 1;
-            } else if(maxV == dist[i]){
-                answer ++;
-            }
-        }
-        //System.out.println(answer);
+        int maxV = Arrays.stream(dist).max().getAsInt();
+        int answer = (int) Arrays.stream(dist).filter(d -> d == maxV).count();
+        System.out.println(answer);
         return answer;
     }
 }
