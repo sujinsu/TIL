@@ -1,6 +1,9 @@
 import java.util.*;
 
-class Solution {
+class pro_체육복_greedy_250404 {
+    public static void main(String[] args) {
+
+    }
     public int solution(int n, int[] lost, int[] reserve) {
 
         int[] students = new int[n+1];

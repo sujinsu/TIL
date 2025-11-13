@@ -3,7 +3,10 @@ import java.util.*;
 /**
  * BFS가 어떨 때 쓰이는지, 기억해두기
  */
-class Solution {
+class pro_숫자변환하기_231103 {
+    public static void main(String[] args) {
+
+    }
     public int solution(int x, int y, int n) {
         int answer = bfs( x,  y,  n);
 

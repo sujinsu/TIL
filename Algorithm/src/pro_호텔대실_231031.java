@@ -1,4 +1,9 @@
-class Solution {
+import java.util.Arrays;
+import java.util.PriorityQueue;
+
+class pro_호텔대실_231031 {
+    public static void main(String[] args) {
+    }
     public int solution(String[][] book_time) {
         int[] count = new int[1450]; // 하루는 1440분
 

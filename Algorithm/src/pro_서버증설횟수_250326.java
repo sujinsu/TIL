@@ -1,4 +1,7 @@
-class Solution {
+class pro_서버증설횟수_250326 {
+    public static void main(String[] args){
+
+    }
     public int solution(int[] players, int m, int k) {
         int answer = 0;
         int time = players.length;

@@ -1,4 +1,7 @@
-class Solution {
+class pro_삼각형최대경로합_dp_250406 {
+    public static void main(String[] args){
+
+    }
     public int solution(int[][] triangle) {
         int row =triangle.length;
         for(int i=1;i<row;i++){
