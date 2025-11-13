@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class pro_prefix_연속부분수열의합 {
+public class pro_prefix_연속부분수열의합_20251113 {
     public static void main(String[] args) {
         int[] elements = {7,9,1,1,4};
         System.out.println(Arrays.toString(elements));
