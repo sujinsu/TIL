@@ -35,4 +35,7 @@ public class pro_dp_등굣길_251114 {
 
         return dp[n-1][m-1];
     }
+    /***
+     * dp[m] 으로도 가능 >> dp[j] (윗 행) + dp[j-1] (왼쪽)
+     */
 }
