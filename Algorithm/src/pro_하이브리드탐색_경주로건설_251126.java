@@ -30,6 +30,7 @@ public class pro_하이브리드탐색_경주로건설_251126 {
 
         while(!q.isEmpty()){
             Node cur = q.pollFirst();
+            if (cur.dir != -1 && cur.cost > cost[cur.row][cur.col][cur.dir]) continue;
             if(cur.row == n-1 && cur.col == n-1){
                 minCost = Math.min(minCost, cur.cost);
             }
